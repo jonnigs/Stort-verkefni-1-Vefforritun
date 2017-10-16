@@ -1,0 +1,76 @@
+// Prófílar á forsíðu og takkinn undir því
+.profiles {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  text-align: center;
+
+  // Wrap og center þegar skjárinn verður 600px
+  @media (min-width: 600px) {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  // Allt í row þegar skjárinn verður 1200px
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+
+  // Fínstilling á hverjum prófíl fyrir sig
+  .profile {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+    // Breidd per prófíl við 600px
+    @media (min-width: 600px) {
+      width: 50%;
+    }
+
+    // Breidd per prófíl við 1200px
+    @media (min-width: 1200px) {
+      width: 25%;
+    }
+
+    .profile__mynd {
+      border-radius: 999px;
+    }
+
+    h2 {
+      width: 100%;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      overflow: hidden;
+      font-family: "Open Sans", ariel, sans-serif;
+      font-style: italic;
+    }
+
+    p {
+      padding-bottom: 1em;
+      font-family: "Open Sans", ariel, sans-serif;
+    }
+
+    p.nafn {
+      font-weight: bold;
+    }
+  }
+}
+
+// Takkinn og textinn neðst
+.sidasta__thing {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  // Fínstilling á texta
+  p {
+    padding: 1em;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

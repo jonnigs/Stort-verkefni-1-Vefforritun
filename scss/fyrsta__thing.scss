@@ -1,0 +1,44 @@
+//Lýsandi nafn, allt við checkboxin á forsíðu
+.fyrsta__thing {
+  @media (min-width: 1200px) {
+    display: flex;
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+
+  .fyrsta__thing__text {
+    display: flex;
+    flex-flow: column;
+    // Stærð á checkbox myndinni
+    img.checkbox {
+      width: 1em;
+      height: 1em;
+    }
+
+    @media (min-width: 1200px) {
+      flex: 1;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+    }
+
+    .pros {
+      display: flex;
+      padding: 20px;
+      align-items: baseline;
+    }
+  }
+
+  .fyrsta__thing__mynd {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    // Hendir myndinni upp til vinstri og lætur hana taka 50% pláss þegar skjárinn verður 1200px
+    @media (min-width: 1200px) {
+      flex: 1;
+      padding-left: 20px;
+    }
+  }
+}

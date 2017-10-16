@@ -1,0 +1,42 @@
+.meginmal {
+  padding: 0 20px;
+  line-height: 2em;
+
+  h2 {
+    padding-top: 2em;
+  }
+
+  p {
+    padding-bottom: 2em;
+  }
+
+  blockquote {
+    margin-right: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.5em;
+
+    @media (min-width: 600px) {
+      float: right;
+      width: 50%;
+      padding-left: 10%;
+      margin: 2em auto;
+    }
+
+    @media (min-width: 1200px) {
+      padding-left: 10px;
+    }
+
+    p {
+      font-size: 0.5em;
+      font-style: normal;
+    }
+  }
+
+  .midju__malsgrein {
+    @media (min-width: 1200px) {
+      width: 41.6%;
+    }
+  }
+}

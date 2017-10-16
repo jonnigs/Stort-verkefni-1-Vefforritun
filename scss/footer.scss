@@ -1,0 +1,41 @@
+// Fótur á síðu
+.footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: $max-width;
+  margin: auto;
+  color: #fff;
+  background-color: #000;
+
+  // Heimilisfang og símanúmer
+  .efra_stoff {
+    display: flex;
+    width: 100%;
+    max-width: $max-width;
+    padding: 2em;
+    padding-top: 1em;
+    justify-content: space-around;
+    margin: auto;
+    border-bottom: 2px solid #ddd;
+
+    // Símanúmer
+    .efra__vinstri {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    // Heimilisfang
+    .efra__haegri {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+  }
+
+  // c Fooþjónustan
+  .nedra__stoff {
+    padding: 2em;
+  }
+}

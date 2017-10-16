@@ -1,0 +1,136 @@
+$max-width: 1200px;
+$gutter: 20px;
+$min-width: 600px;
+
+.form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 1em;
+
+  @media (min-width: 600px) {
+    flex-flow: row;
+
+  }
+
+  .personuupplysingar {
+    @media (min-width: 600px) {
+      width: 50%;
+      padding-right: 10px;
+      margin: auto;
+      margin-top: 5em;
+    }
+    @media (min-width: 1200px) {
+      width: 33%;
+      padding-right: 10px;
+    }
+  }
+
+  .greidsluupplysingar {
+
+    @media (min-width: 600px) {
+      width: 50%;
+      padding-left: 10px;
+      margin: auto;
+      margin-top: 5em;
+    }
+
+    @media (min-width: 1200px) {
+      width: 33%;
+      padding-left: 10px;
+    }
+  }
+}
+
+div.form > fieldset {
+  width: 100%;
+  margin: auto;
+}
+
+fieldset {
+  border: none;
+
+  fieldset {
+    padding-bottom: 1.5em;
+
+    legend {
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+}
+
+.kyn {
+  display: flex;
+  flex-flow: column;
+
+  label {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.panta {
+  display: flex;
+
+  button {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+}
+
+input {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+}
+
+fieldset.kyn {
+  legend {
+    padding-bottom: 0.5em;
+  }
+
+  label {
+    padding-bottom: 0.5em;
+
+    input {
+      width: auto;
+      margin-right: 1em;
+    }
+  }
+}
+
+.postlisti {
+  input {
+    width: auto;
+  }
+}
+
+.gildistimi_val {
+  display: flex;
+
+  fieldset {
+    width: 50%;
+    margin: auto;
+
+    label {
+      display: flex;
+      font-family: "Open Sans", sans-serif;
+
+      p select {
+        width: auto;
+        padding-right: 0;
+        margin: auto;
+
+        .ar_text {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .ar {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,83 @@
+//header með forsíðumyndinni
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  min-height: 600px;
+  padding: 2em;
+  margin: auto;
+  margin-bottom: 2em;
+  flex-direction: column;
+  background: transparent url("bg.jpg") no-repeat fixed 50% 50%;
+  background-size: cover;
+
+  // Forsíðu header, önnur mynd og miðjaður texti sem birtist
+  .header__1 {
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    align-items: center;
+
+    // Útlit á texta sem birtist
+    h1 h2 button {
+      width: 100%;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 24px;
+      opacity: 0;
+      transition: opacity 1s ease-in 0s;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 1s ease-in 1s;
+    }
+
+    button {
+      opacity: 0;
+      transition: opacity 1s ease-in 2s;
+    }
+  }
+}
+
+// Trigger fyrir textann til að birtast, músin fer inn á síðuna
+body:hover .birtist {
+  opacity: 1;
+}
+
+body:hover .button {
+  opacity: 1;
+}
+
+// Header með hinni myndinni
+.hinn__header {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  min-height: 600px;
+  padding: 2em;
+  margin: auto;
+  margin-bottom: 2em;
+  flex-direction: column;
+  background: transparent url("bg-subpage.jpg") no-repeat fixed 50% 50%;
+  background-size: cover;
+
+  .header__2 {
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+  }
+
+  h1 {
+    width: 100%;
+    margin: auto;
+    margin-left: 0;
+    font-family: "Roboto Slab", Garamond, serif;
+    color: #fff;
+    align-self: flex-start;
+  }
+}

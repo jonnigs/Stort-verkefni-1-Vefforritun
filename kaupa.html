@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="grid" lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stórt verkefni 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="styleguide.css">
+  <!--link rel="stylesheet" href="grid.css"-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <nav>
+        <ul class="navbar__elements">
+          <li class="foothjonustan"><a class="foothjonustan" href="index.html">Fooþjónustan</a></li>
+          <li class="haegri"><a class="um" href="um.html">Um</a><a class="kaupa" href="kaupa.html">Kaupa</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <header class="hinn__header">
+    <div class="header__2">
+      <h1>Kaupa</h1>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="form">
+      <fieldset class="personuupplysingar">
+
+        <legend><h2>Persónuupplýsinar</h2></legend>
+
+        <fieldset class="nafn">
+          <legend for="nafn">Nafn:</legend>
+          <input type="text" id="nafn" name="notendanafn" required>
+        </fieldset>
+
+        <fieldset class="kennitala">
+          <legend for="kennitala">Kennitala:</legend>
+          <input type="text" pattern="[0-9]{6}-[0-9]{4}" placeholder="123456-7890" id="kennitala" name="kennitala">
+        </fieldset>
+
+        <fieldset class="kyn">
+          <legend for="kyn">Kyn:</legend>
+          <label>
+            <input name="kyn" type="radio" value="kona">
+            Kona
+          </label>
+          <label>
+            <input name="kyn" type="radio" value="karl">
+            Karl
+          </label>
+          <label>
+            <input name="kyn" type="radio" value="annad">
+            Annað
+          </label>
+        </fieldset>
+
+        <fieldset class="simi">
+          <legend for="simi">Sími:</legend >
+          <input type="tel" placeholder="+354 812 3456" id="simi" name="simanumer" required>
+        </fieldset>
+
+        <fieldset class="heimilisfang">
+          <legend for="nafn">Heimilisfang:</legend>
+          <input type="text" id="heimilisfang" name="heimilisfang" required>
+        </fieldset>
+
+        <fieldset class="postlisti">
+          <label>
+            <input name="postlisti" type="checkbox" value="postlista" checked>
+            Skrá mig á póstlista
+          </label>
+        </fieldset>
+
+      </fieldset>
+
+      <fieldset class="greidsluupplysingar">
+
+        <legend><h2>Greiðsluupplýsinar</h2></legend>
+
+        <fieldset class="greidsluadferd">
+          <legend>Greiða með</legend>
+          <label>
+
+            <select name="greidsluadferd">
+              <option value="kreditkort">Kreditkorti</option>
+              <option value="debitkort">Debitkorti</option>
+              <option value="millifaera">Millifærslu</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="nafn__a__korti">
+          <legend for="nafn">Nafn á korti:</legend>
+          <input type="text" id="nafn" name="notendanafn" required>
+        </fieldset>
+
+        <fieldset class="kortanumer">
+          <legend for="kortanumer">Kortanúmer:</legend>
+          <input type="text" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="5999-9999-9999-9999" id="kortanumer" name="kortanumer">
+        </fieldset>
+
+        <fieldset class="gildistimi">
+          <legend>Gildistími:</legend>
+          <div class="gildistimi_val">
+            <fieldset class="manudur">
+              <label>
+                <p>Mán</p>
+                <select name="manudur">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </label>
+            </fieldset>
+
+            <fieldset class="ar">
+              <label>
+                <p class="ar__text">Ár</p>
+                <select name="ar">
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                </select>
+              </label>
+            </fieldset>
+          </div>
+        </fieldset>
+
+      </fieldset>
+    </div>
+    <div class="panta">
+      <button class="button">
+        Panta
+      </button>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="efra_stoff">
+          <div class="efra__vinstri">
+            <p>
+              Fooþjónustan
+            </p>
+            <p>
+              123-4567
+            </p>
+          </div>
+
+          <div class="efra__haegri">
+            <p>
+              Opið 12-13 alla daga
+            </p>
+            <p>
+              Bargata 1
+            </p>
+            <p>
+              900 Foobar
+            </p>
+          </div>
+        </div>
+
+        <div class="nedra__stoff">
+          <p>
+            © Fooþjónustan 2017
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
